@@ -11,7 +11,7 @@ const Header = () => {
       <div className="max-w-[1440px] mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <a href="#/" className="text-2xl font-bold text-indigo-600">
-            TicketFlow
+            Ticaro
           </a>
 
           <nav className="hidden md:flex items-center gap-6">

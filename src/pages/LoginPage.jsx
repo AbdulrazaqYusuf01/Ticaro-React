@@ -29,14 +29,13 @@ const LoginPage = () => {
       return;
     }
 
-    // Simulate authentication
-    if (email === "demo@ticketflow.com" && password === "demo123") {
+    if (email === "demo@feMentor.com" && password === "!abdul.tsx") {
       login({ email, name: "Demo User" });
       setToast({ message: "Login successful!", type: "success" });
       setTimeout(() => (window.location.hash = "#/dashboard"), 1000);
     } else {
       setToast({
-        message: "Invalid credentials. Try demo@ticketflow.com / demo123",
+        message: "Invalid credentials. Try demo@feMentor.com / !abdul.tsx",
         type: "error",
       });
     }
@@ -69,7 +68,7 @@ const LoginPage = () => {
                 className={`w-full px-4 py-3 rounded-lg border ${
                   errors.email ? "border-red-500" : "border-gray-300"
                 } focus:outline-none focus:ring-2 focus:ring-indigo-500`}
-                placeholder="demo@ticketflow.com"
+                placeholder="demo@ticaro.com"
               />
               {errors.email && (
                 <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -116,8 +115,8 @@ const LoginPage = () => {
             <p className="text-sm text-gray-700">
               <strong>Demo Credentials:</strong>
             </p>
-            <p className="text-sm text-gray-600">Email: demo@ticketflow.com</p>
-            <p className="text-sm text-gray-600">Password: demo123</p>
+            <p className="text-sm text-gray-600">Email: demo@feMentor.com</p>
+            <p className="text-sm text-gray-600">Password: !abdul.tsx</p>
           </div>
         </div>
       </div>

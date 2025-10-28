@@ -9,12 +9,11 @@ const LandingPage = () => {
     <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-50">
       <Header />
 
-      {/* Hero Section */}
       <section className="relative overflow-hidden bg-linear-to-r from-indigo-600 to-purple-600 text-white">
         <div className="max-w-[1440px] mx-auto px-6 py-20 md:py-32 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Streamline Your Support with TicketFlow
+              Streamline Your Support with Ticaro
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-indigo-100">
               Manage, track, and resolve customer tickets efficiently. Built for
@@ -37,11 +36,12 @@ const LandingPage = () => {
           </div>
         </div>
 
-        {/* Decorative Elements */}
         <div className="absolute top-20 right-10 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl"></div>
         <div className="absolute -top-32 -right-32 w-96 h-96 bg-purple-400 opacity-20 rounded-full"></div>
 
-        {/* Wavy SVG Background */}
+        <div className="absolute bottom-20 left-10 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-purple-400 opacity-20 rounded-full"></div>
+
         <svg
           className="absolute bottom-0 w-full"
           viewBox="0 0 1440 120"
@@ -55,7 +55,6 @@ const LandingPage = () => {
         </svg>
       </section>
 
-      {/* Features Section */}
       <section className="max-w-[1440px] mx-auto px-6 py-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
           Everything You Need to Manage Tickets
@@ -80,7 +79,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
       <section className="relative bg-linear-to-br from-indigo-100 to-purple-100 py-20">
         <div className="absolute top-10 left-10 w-48 h-48 bg-indigo-300 opacity-30 rounded-full blur-2xl"></div>
         <div className="max-w-[1440px] mx-auto px-6 relative z-10">

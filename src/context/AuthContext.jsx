@@ -8,15 +8,14 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Check for existing session
-    const token = localStorage.getItem("ticketapp_session");
+    const token = localStorage.getItem("ticket_session");
     if (token) {
       try {
         const userData = JSON.parse(token);
         setUser(userData);
       } catch (err) {
         console.error(err);
-        localStorage.removeItem("ticketapp_session");
+        localStorage.removeItem("ticket_session");
       }
     }
     setLoading(false);
@@ -24,12 +23,12 @@ export const AuthProvider = ({ children }) => {
 
   const login = (userData) => {
     const sessionData = { ...userData, timestamp: Date.now() };
-    localStorage.setItem("ticketapp_session", JSON.stringify(sessionData));
+    localStorage.setItem("ticket_session", JSON.stringify(sessionData));
     setUser(sessionData);
   };
 
   const logout = () => {
-    localStorage.removeItem("ticketapp_session");
+    localStorage.removeItem("ticket_session");
     setUser(null);
   };
 
