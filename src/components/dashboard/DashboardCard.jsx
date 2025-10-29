@@ -3,10 +3,10 @@ import { LayoutDashboard } from "lucide-react";
 
 const DashboardCard = ({ title, value, color }) => {
   const colors = {
-    indigo: "from-indigo-500 to-purple-500",
-    green: "from-green-500 to-emerald-500",
-    amber: "from-amber-500 to-orange-500",
-    gray: "from-gray-500 to-slate-500",
+    indigo: "from-indigo-500 to-indigo-500",
+    green: "from-emerald-500 to-emerald-500",
+    amber: "from-amber-500 to-amber-500",
+    gray: "from-slate-500 to-slate-500",
   };
 
   return (

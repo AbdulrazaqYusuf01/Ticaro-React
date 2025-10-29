@@ -9,7 +9,7 @@ const LandingPage = () => {
     <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-50">
       <Header />
 
-      <section className="relative overflow-hidden bg-linear-to-r from-indigo-600 to-purple-600 text-white">
+      <section className="relative overflow-hidden bg-linear-to-r from-indigo-600 to-indigo-600 text-white">
         <div className="max-w-[1440px] mx-auto px-6 py-20 md:py-32 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -64,17 +64,17 @@ const LandingPage = () => {
           <FeatureCard
             title="Real-time Tracking"
             description="Monitor ticket status in real-time with instant updates and notifications."
-            gradient="from-blue-500 to-cyan-500"
+            gradient="from-cyan-500 to-cyan-500"
           />
           <FeatureCard
             title="Smart Organization"
             description="Categorize and prioritize tickets with flexible status management."
-            gradient="from-purple-500 to-pink-500"
+            gradient="from-pink-500 to-pink-500"
           />
           <FeatureCard
             title="Seamless Workflow"
             description="Create, update, and resolve tickets with an intuitive interface."
-            gradient="from-orange-500 to-red-500"
+            gradient="from-red-500 to-red-500"
           />
         </div>
       </section>
